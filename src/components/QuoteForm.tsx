@@ -105,7 +105,7 @@ const QuoteForm = () => {
                     <div className="space-y-2 text-sm text-blue-100">
                       <p>📞 06 12 34 56 78</p>
                       <p>✉️ contact@renopro.fr</p>
-                      <p>📍 Zone d'intervention : Île-de-France</p>
+                      <p>📍 Zone d&apos;intervention : Île-de-France</p>
                     </div>
                   </div>
                 </CardContent>
@@ -229,10 +229,10 @@ const QuoteForm = () => {
                             <SelectValue placeholder="Sélectionnez" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="urgent">Urgent (< 1 mois)</SelectItem>
+                            <SelectItem value="urgent">Urgent (&lt; 1 mois)</SelectItem>
                             <SelectItem value="rapide">Rapide (1-3 mois)</SelectItem>
                             <SelectItem value="normal">Normal (3-6 mois)</SelectItem>
-                            <SelectItem value="flexible">Flexible (> 6 mois)</SelectItem>
+                            <SelectItem value="flexible">Flexible (&gt; 6 mois)</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -279,7 +279,7 @@ const QuoteForm = () => {
                     </Button>
 
                     <p className="text-xs text-gray-500 text-center">
-                      En soumettant ce formulaire, vous acceptez d'être contacté par nos équipes. 
+                      En soumettant ce formulaire, vous acceptez d&apos;être contacté par nos équipes. 
                       Vos données sont protégées et ne seront jamais transmises à des tiers.
                     </p>
                   </form>
