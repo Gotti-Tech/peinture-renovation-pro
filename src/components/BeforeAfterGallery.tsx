@@ -1,8 +1,8 @@
 
-import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const BeforeAfterGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,8 +25,8 @@ const BeforeAfterGallery = () => {
     {
       id: 3,
       title: "Cuisine contemporaine",
-      before: "https://images.unsplash.com/photo-1556909045-f7c6c73b4241?q=80&w=800&sat=-40",
-      after: "https://images.unsplash.com/photo-1556909045-f7c6c73b4241?q=80&w=800",
+      before: "https://images.unsplash.com/photo-1592506119503-c0b18879bd5a?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      after: "https://images.unsplash.com/photo-1592506119503-c0b18879bd5a?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description: "Rénovation cuisine avec peinture et aménagements sur mesure."
     }
   ];
@@ -120,9 +120,8 @@ const BeforeAfterGallery = () => {
                     <button
                       key={index}
                       onClick={() => setCurrentIndex(index)}
-                      className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
-                      }`}
+                      className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                        }`}
                     />
                   ))}
                 </div>
@@ -135,11 +134,10 @@ const BeforeAfterGallery = () => {
             {projects.map((project, index) => (
               <Card
                 key={project.id}
-                className={`cursor-pointer transition-all duration-300 border-2 ${
-                  index === currentIndex
-                    ? 'border-blue-600 shadow-lg'
-                    : 'border-gray-200 hover:border-gray-300'
-                }`}
+                className={`cursor-pointer transition-all duration-300 border-2 ${index === currentIndex
+                  ? 'border-blue-600 shadow-lg'
+                  : 'border-gray-200 hover:border-gray-300'
+                  }`}
                 onClick={() => setCurrentIndex(index)}
               >
                 <CardContent className="p-0">
